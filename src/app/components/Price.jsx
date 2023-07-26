@@ -64,7 +64,7 @@ export default function Pricing() {
         <div className="mx-auto max-w-4xl text-center">
           
           <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-          Solo, Team or Corporation? <br /> &nbsp;&nbsp;We've got you covered.
+          Solo, Team or Corporation? <br /> We've got you covered.
           </p>
         </div>
       
