@@ -22,10 +22,10 @@ const SectionOne = () => {
                   type="text"
                   id="hero-field"
                   name="hero-field"
-                  className="w-full bg-gray-100 rounded border bg-gray-300 border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-700 p-4 leading-8 transition-colors duration-200 ease-in-out"
+                  className="w-full bg-gray-100 rounded border bg-gray-300 border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-700 py-4  transition-colors duration-200 ease-in-out"
                 />
               </div>
-              <button className="inline-flex text-white bg-black border-0 py-5 px-4 focus:outline-none hover:bg-yellow-400 rounded text-lg">
+              <button className="inline-flex text-white bg-black border-0 lg:py-4 py-1 px-4 focus:outline-none hover:bg-yellow-400 rounded lg:text-lg">
                 Start Collaboration
               </button>
            
