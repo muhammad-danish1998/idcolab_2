@@ -19,7 +19,7 @@ const SectionOne = () => {
               ideas, and make decisions in real-time
             </p>
            
-            <form className="mt-10 lg:w-4/6">
+            <form className="mt-10 lg:w-5/6">
               <div className="flex ">
                 <label htmlFor="email-address" className="sr-only">
                   Email address
