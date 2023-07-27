@@ -16,8 +16,8 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-white">
-      <nav className="mx-auto flex max-w-8xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+    <header className="bg-white lg:rounded-full lg:max-w-screen-2xl lg:mx-auto lg:mt-8 ">
+      <nav className="mx-auto flex  items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex items-center gap-x-12">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
@@ -46,7 +46,7 @@ export default function Header() {
         <div className=" flex items-center gap-x-6">
                 <a
                   href="#"
-                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="rounded-full bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   SIGN UP
                 </a>

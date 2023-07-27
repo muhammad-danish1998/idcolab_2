@@ -3,16 +3,16 @@ import React from "react";
 const Featured = () => {
   return (
     <div>
-      <section class="text-gray-600 body-font">
-        <div class="container px-5  mx-auto">
+      <section class="text-gray-600 body-font ">
+        <div class="container px-5   mx-auto">
           <div class="flex flex-wrap w-full  flex-col items-center text-center">
             <h1 class="title-font sm:text-5xl text-3xl mb-14 font-medium text-gray-900">
               Featured we <br /> Provide for you
             </h1>
        
           </div>
-          <div class="flex flex-wrap -m-4 ">
-            <div class="xl:w-1/3 md:w-1/2 p-4 ">
+          <div class="flex flex-wrap -m-4 max-w-7xl mx-auto ">
+            <div class="xl:w-1/3 md:w-1/2 p-4  ">
               <div class="border border-gray-200 p-6 rounded-lg bg-white bg-white">
                 <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
                   <svg
