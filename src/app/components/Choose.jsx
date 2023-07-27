@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 const Choose = () => {
   return (
     <div>
@@ -13,6 +13,13 @@ const Choose = () => {
             />
           </div>
           <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+            <Image
+              src="/play.svg"
+              width={50}
+              height={50}
+              alt="Picture of the author"
+              className="mb-4"
+            />
             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
               why you should choose IDCOLAB?
             </h1>
@@ -24,7 +31,6 @@ const Choose = () => {
               <button class="inline-flex text-white bg-black border-0 py-1 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                 learn more
               </button>
-             
             </div>
           </div>
         </div>

@@ -18,7 +18,7 @@ const tiers = [
     mostPopular: false,
   },
   {
-    name: 'Startup',
+    name: 'Premium Plan',
     id: 'tier-startup',
     href: '#',
     price: { monthly: '$30', annually: '$288' },
@@ -33,7 +33,7 @@ const tiers = [
     mostPopular: true,
   },
   {
-    name: 'Enterprise',
+    name: 'Business Plan',
     id: 'tier-enterprise',
     href: '#',
     price: { monthly: '$60', annually: '$576' },
@@ -64,7 +64,7 @@ export default function Pricing() {
         <div className="mx-auto max-w-4xl text-center">
           
           <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-          Solo, Team or Corporation? <br /> We've got you covered.
+          Solo, Team or Corporation? <br /> <span> We've got you covered.</span>
           </p>
         </div>
       

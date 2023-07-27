@@ -33,13 +33,13 @@ const faqs = [
 
 export default function Question() {
   return (
-    <div className="bg-yellow-500">
+    <div className="bg-yellow-400">
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
         <div className="mx-auto max-w-7xl divide-y divide-black/10">
-          <h2 className="title-font sm:text-6xl text-3xl mb-14 font-medium text-gray-900 text-center">
+          <h2 className="title-font  sm:text-6xl text-3xl mb-14 font-medium text-gray-900 text-center">
             Frequently <br /> Asked Questions
           </h2>
-          <dl className="mt-10 space-y-6 divide-y divide-black/12">
+          <dl className="mt-10 space-y-6 divide-y divide-black 2/12 ">
             {faqs.map((faq) => (
               <Disclosure as="div" key={faq.question} className="pt-6">
                 {({ open }) => (
@@ -74,6 +74,7 @@ export default function Question() {
               </Disclosure>
             ))}
           </dl>
+          
         </div>
       </div>
     </div>
