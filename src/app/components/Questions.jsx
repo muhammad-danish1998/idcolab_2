@@ -39,7 +39,8 @@ export default function Question() {
           <h2 className="title-font  sm:text-6xl text-3xl mb-14 font-medium text-gray-900 text-center">
             Frequently <br /> Asked Questions
           </h2>
-          <dl className="mt-10 space-y-6 divide-y divide-black 2/12 ">
+          <div className="lg:flex lg:justify-around  ">
+          <dl className="mt-10 space-y-6 divide-y divide-black 2/12 lg:w-2/5 w-full ">
             {faqs.map((faq) => (
               <Disclosure as="div" key={faq.question} className="pt-6">
                 {({ open }) => (
@@ -74,7 +75,42 @@ export default function Question() {
               </Disclosure>
             ))}
           </dl>
-          
+          <dl className="mt-10 space-y-6 divide-y divide-black 2/12 lg:w-2/5 ">
+            {faqs.map((faq) => (
+              <Disclosure as="div" key={faq.question} className="pt-6">
+                {({ open }) => (
+                  <>
+                    <dt>
+                      <Disclosure.Button className="flex w-full items-start justify-between text-left text-black">
+                        <span className="text-base font-semibold leading-7">
+                          {faq.question}
+                        </span>
+                        <span className="ml-6 flex h-7 items-center">
+                          {open ? (
+                            <MinusSmallIcon
+                              className="h-6 w-6"
+                              aria-hidden="true"
+                            />
+                          ) : (
+                            <PlusSmallIcon
+                              className="h-6 w-6"
+                              aria-hidden="true"
+                            />
+                          )}
+                        </span>
+                      </Disclosure.Button>
+                    </dt>
+                    <Disclosure.Panel as="dd" className="mt-2 pr-12">
+                      <p className="text-base leading-7 text-black">
+                        {faq.answer}
+                      </p>
+                    </Disclosure.Panel>
+                  </>
+                )}
+              </Disclosure>
+            ))}
+          </dl>
+          </div>
         </div>
       </div>
     </div>
