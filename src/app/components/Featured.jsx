@@ -12,9 +12,9 @@ const Featured = () => {
             </h1>
           </div>
           <div class="flex flex-wrap -m-4 max-w-7xl mx-auto ">
-            <div class="xl:w-1/3 md:w-1/2 p-4  ">
-              <div class="border border-gray-200 p-6 rounded-xl bg-white bg-white">
-                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+            <div class="xl:w-1/3 md:w-1/2 p-4   ">
+              <div class="border border-gray-200 p-6 rounded-xl bg-white">
+                <div class="w-10 h-10 inline-flex items-center justify-center  rounded-full bg-indigo-100 text-indigo-500 mb-4">
                   <Image
                     src="/dash.svg"
                     width={50}
