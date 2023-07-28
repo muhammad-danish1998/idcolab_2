@@ -22,7 +22,7 @@ export default function MangmentTool() {
             <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:pr-0 bg-black">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-2xl ">
                
-                <h1 className="text-4xl font-bold  text-white sm:text-6xl">
+                <h1 className="font-heading title-font  sm:text-5xl text-3xl mb-14 font-medium text-white">
                   Build your solid team with the perfect time management tool.
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-white ">

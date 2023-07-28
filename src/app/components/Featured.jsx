@@ -7,7 +7,7 @@ const Featured = () => {
       <section class="text-gray-600 body-font ">
         <div class="container px-5   mx-auto">
           <div class="flex flex-wrap w-full  flex-col items-center text-center">
-            <h1 class="title-font sm:text-5xl text-3xl mb-14 font-medium text-gray-900">
+            <h1 class="font-heading title-font  sm:text-5xl text-3xl mb-14 font-medium text-gray-900">
               Featured we <br /> Provide for you
             </h1>
           </div>
@@ -22,10 +22,10 @@ const Featured = () => {
                     alt="Picture of the author"
                   />
                 </div>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                <h2 class="text-lg  text-gray-900 font-medium title-font mb-2">
                   Shooting Stars
                 </h2>
-                <p class="leading-relaxed text-base">
+                <p class="leading-relaxed font-para text-base">
                   Fingerstache flexitarian street art 8-bit waist co, subway
                   tile poke farm.
                 </p>
@@ -44,7 +44,7 @@ const Featured = () => {
                 <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
                   The Catalyzer
                 </h2>
-                <p class="leading-relaxed text-base">
+                <p class="leading-relaxed font-para text-base">
                   Fingerstache flexitarian street art 8-bit waist co, subway
                   tile poke farm.
                 </p>
@@ -63,7 +63,7 @@ const Featured = () => {
                 <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
                   Neptune
                 </h2>
-                <p class="leading-relaxed text-base">
+                <p class="leading-relaxed text-base font-para">
                   Fingerstache flexitarian street art 8-bit waist co, subway
                   tile poke farm.
                 </p>
@@ -82,7 +82,7 @@ const Featured = () => {
                 <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
                   Melanchole
                 </h2>
-                <p class="leading-relaxed text-base">
+                <p class="leading-relaxed text-base font-para">
                   Fingerstache flexitarian street art 8-bit waist co, subway
                   tile poke farm.
                 </p>
@@ -101,7 +101,7 @@ const Featured = () => {
                 <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
                   Bunker
                 </h2>
-                <p class="leading-relaxed text-base">
+                <p class="leading-relaxed text-base font-para">
                   Fingerstache flexitarian street art 8-bit waist co, subway
                   tile poke farm.
                 </p>
@@ -120,7 +120,7 @@ const Featured = () => {
                 <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
                   Neptune
                 </h2>
-                <p class="leading-relaxed text-base">
+                <p class="leading-relaxed text-base font-para">
                   Fingerstache flexitarian street art 8-bit waist co, subway
                   tile poke farm.
                 </p>

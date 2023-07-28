@@ -63,9 +63,9 @@ export default function Pricing() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           
-          <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+          <h1 className="font-heading title-font  sm:text-5xl text-3xl mb-14 font-medium text-gray-900">
           Solo, Team or Corporation? <br /> <span> We've got you covered.</span>
-          </p>
+          </h1>
         </div>
       
         <div className="mt-16 flex justify-center">
@@ -97,7 +97,7 @@ export default function Pricing() {
            
               key={tier.id}
               className={classNames(
-                tier.mostPopular ? 'ring-2 ring-indigo-600  ' : ' ring-1 ring-gray-200 ',
+                tier.mostPopular ? 'ring-2 ring-indigo-600 font-para ' : ' font-para ring-1 ring-gray-200 ',
                 'rounded-3xl p-8 xl:p-10'
               )}
             >
@@ -105,20 +105,20 @@ export default function Pricing() {
                 <h3
                   id={tier.id}
                   className={classNames(
-                    tier.mostPopular ? 'text-indigo-600 ' : 'text-gray-900',
+                    tier.mostPopular ? 'text-indigo-600 font-para ' : 'text-gray-900',
                     'text-lg font-semibold leading-8'
                   )}
                 >
                   {tier.name}
                 </h3>
                 {tier.mostPopular ? (
-                  <p className="rounded-full bg-indigo-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-indigo-600">
+                  <p className="rounded-full font-para bg-indigo-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-indigo-600">
                     Most popular
                   </p>
                 ) : null}
               </div>
              
-              <p className="mt-6 flex items-baseline gap-x-1">
+              <p className="mt-6 flex items-baseline gap-x-1 font-para">
                 <span className="text-4xl font-bold tracking-tight text-gray-900">{tier.price[frequency.value]}</span>
                 <span className="text-sm font-semibold leading-6 text-gray-600">{frequency.priceSuffix}</span>
               </p>
@@ -127,17 +127,17 @@ export default function Pricing() {
                 aria-describedby={tier.id}
                 className={classNames(
                   tier.mostPopular
-                    ? 'bg-indigo-600 text-white shadow-sm hover:bg-indigo-500'
-                    : 'text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300',
-                  'mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+                    ? 'bg-indigo-600 text-white shadow-sm hover:bg-indigo-500 font-para'
+                    : ' font-para text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300',
+                  'mt-6 font-para block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
                 )}
               >
                 Buy plan
               </a>
-              <ul role="list" className="mt-8 space-y-3 text-sm leading-6 text-gray-600 xl:mt-10">
+              <ul role="list" className="mt-8 space-y-3  text-sm leading-6 text-gray-600 xl:mt-10">
                 {tier.features.map((feature) => (
-                  <li key={feature} className="flex gap-x-3">
-                    <CheckIcon className="h-6 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                  <li key={feature} className="flex gap-x-3 font-para">
+                    <CheckIcon className="h-6 w-5 flex-none font-para text-indigo-600" aria-hidden="true" />
                     {feature}
                   </li>
                 ))}

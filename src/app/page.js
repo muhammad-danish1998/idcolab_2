@@ -7,12 +7,15 @@ import Question from "./components/Questions";
 import Newslater from "./components/Newslater";
 import Pricing from "./components/Price";
 import MangmentTool from "./components/MangmentTool";
+import OnePhase from "./components/OnePhase";
+
 
 const page = () => {
   return (
     <div>
       <SectionOne />
       <Featured />
+     <OnePhase />
       <Choose />
       <Pricing />
       <Question />

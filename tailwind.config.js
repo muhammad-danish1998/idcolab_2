@@ -14,6 +14,14 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
+    fontFamily:{
+      'heading' : ['Familjen Grotesk', 'sans-serif'],
+      'para' : ['Mulish', 'sans-serif']
+    },
+    backgroundImage: {
+      'hero-pattern': "url('/one phase.png')",
+      
+    }
   },
   plugins: [],
 }
