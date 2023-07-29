@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 /*
   This login requires some changes to your config:
   
@@ -29,7 +31,7 @@ export default function login() {
             <div>
               <img
                 className="h-10 w-auto"
-                src="logo.svg"
+                src="/images/landing/header/logo.svg"
                 alt="Your Company"
               />
               <h2 className="mt-8 text-4xl font-bold leading-9 tracking-tight text-gray-900">
@@ -100,14 +102,14 @@ export default function login() {
                 <div className=" flex justify-center">
                  
 
-                <img src="google.png" className="w-32 cursor-pointer h-24" alt="" />
+                <img src="/images/landing/signin/google.png" className="w-26 cursor-pointer h-24" alt="" />
                  
                 </div>
                 <p className="mt-2 text-lg leading-6 text-gray-500">
                 For Registration? {' '}
-                <a href="/signup" className="underline text-lg font-semibold text-indigo-600 hover:text-indigo-500">
+                <Link href="/signup" className="underline text-lg font-semibold text-indigo-600 hover:text-indigo-500">
                   Sign up
-                </a>
+                </Link>
               </p>
               </div>
             </div>

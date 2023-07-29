@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 /*
   This page requires some changes to your config:
   
@@ -26,10 +28,13 @@ export default function page() {
       <div className="flex min-h-full h-screen flex-1">
         <div className="flex flex-1 flex-col justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
           <div className="mx-auto w-full max-w-sm lg:w-96">
+            <div className="mb-2">
+            <Link className=" font-bold font-heading text-2xl cursor-pointer" href={"/"}>  Back To Home</Link>
+            </div>
             <div>
               <img
                 className="h-10 w-auto"
-                src="logo.svg"
+                src="/images/landing/header/logo.svg"
                 alt="Your Company"
               />
               <h2 className="mt-8 text-4xl font-bold leading-9 tracking-tight text-gray-900">
@@ -118,14 +123,14 @@ export default function page() {
                 <div className=" flex justify-center">
                  
 
-                <img src="google.png" className="w-32 cursor-pointer h-24" alt="" />
+                <img src="/images/landing/signin/google.png" className="w-26 cursor-pointer h-24" alt="" />
                  
                 </div>
                 <p className="mt-2 text-lg leading-6 text-gray-500">
                 Already have an account?{' '}
-                <a href="/login" className="underline text-lg font-semibold text-indigo-600 hover:text-indigo-500">
+                <Link href="/login" className="underline text-lg font-semibold text-indigo-600 hover:text-indigo-500">
                   Sign in
-                </a>
+                </Link>
               </p>
               </div>
             </div>

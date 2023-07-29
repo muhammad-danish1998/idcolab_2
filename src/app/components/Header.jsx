@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import styles from "@/app/styles/header.module.css";
-
+import Link from 'next/link'
 const navigation = [
   { name: 'PLUGIN', href: '#' },
   { name: 'PUBLIC LIBRARY', href: '#' },
@@ -45,18 +45,18 @@ export default function Header() {
         <div className="hidden lg:flex">
          
         <div className=" flex items-center gap-x-6">
-                <a
+                <Link
                   href="/signup"
                   className="rounded-full bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   SIGN UP
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  href="/login"
                   className="text-sm font-semibold leading-6 text-gray-900"
                 >
                   Log in <span aria-hidden="true">→</span>
-                </a>
+                </Link>
               </div>
         </div>
       </nav>
