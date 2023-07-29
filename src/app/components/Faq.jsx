@@ -31,12 +31,12 @@ const faqs = [
   // More questions...
 ];
 
-export default function Question() {
+export default function Faq() {
   return (
     <div className="bg-yellow-400">
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
         <div className="mx-auto max-w-7xl divide-y divide-black/10">
-          <h2 className="font-heading title-font  sm:text-5xl text-center text-3xl mb-14 font-medium text-gray-900">
+          <h2 className="font-heading lg:leading-loose title-font  sm:text-5xl text-center text-5xl mb-14 font-medium text-gray-900">
             Frequently <br /> Asked Questions
           </h2>
           <div className="lg:flex lg:justify-around  ">
@@ -47,7 +47,7 @@ export default function Question() {
                   <>
                     <dt>
                       <Disclosure.Button className="flex w-full items-start justify-between text-left text-black">
-                        <span className="text-base font-semibold leading-7">
+                        <span className=" lg:text-lg  leading-7 font-heading lg:space-x-4">
                           {faq.question}
                         </span>
                         <span className="ml-6 flex h-7 items-center">
@@ -66,7 +66,7 @@ export default function Question() {
                       </Disclosure.Button>
                     </dt>
                     <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                      <p className="text-base leading-7 text-black">
+                      <p className="lg:text-lg  leading-7 font-heading  text-black">
                         {faq.answer}
                       </p>
                     </Disclosure.Panel>
@@ -82,7 +82,7 @@ export default function Question() {
                   <>
                     <dt>
                       <Disclosure.Button className="flex w-full items-start justify-between text-left text-black">
-                        <span className="text-base font-semibold leading-7">
+                        <span className="text-base  leading-7">
                           {faq.question}
                         </span>
                         <span className="ml-6 flex h-7 items-center">

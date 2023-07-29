@@ -81,7 +81,7 @@ export default function Pricing() {
                 value={option}
                 className={({ checked }) =>
                   classNames(
-                    checked ? 'bg-black text-white' : 'text-gray-500',
+                    checked ? 'bg-black text-white ' : 'text-gray-500',
                     'cursor-pointer rounded-full px-2.5 py-2'
                   )
                 }
@@ -91,7 +91,7 @@ export default function Pricing() {
             ))}
           </RadioGroup>
         </div>
-        <div className="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className="isolate  mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {tiers.map((tier) => (
             <div
            
@@ -101,7 +101,7 @@ export default function Pricing() {
                 'rounded-3xl p-8 xl:p-10'
               )}
             >
-              <div className="flex items-center justify-between gap-x-4"  >
+              <div className="flex  items-center justify-between gap-x-4"  >
                 <h3
                   id={tier.id}
                   className={classNames(
@@ -112,13 +112,13 @@ export default function Pricing() {
                   {tier.name}
                 </h3>
                 {tier.mostPopular ? (
-                  <p className="rounded-full font-para bg-indigo-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-indigo-600">
+                  <p className="rounded-full font-para  bg-indigo-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-indigo-600">
                     Most popular
                   </p>
                 ) : null}
               </div>
              
-              <p className="mt-6 flex items-baseline gap-x-1 font-para">
+              <p className="mt-6 flex items-baseline gap-x-1 font-para ">
                 <span className="text-4xl font-bold tracking-tight text-gray-900">{tier.price[frequency.value]}</span>
                 <span className="text-sm font-semibold leading-6 text-gray-600">{frequency.priceSuffix}</span>
               </p>

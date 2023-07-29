@@ -4,6 +4,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk&family=Mulish&display=swap');
+@layer base {
+  @font-face {
+    font-family: 'ClashGrotesk-Variable';
+    src: url('/fonts/ClashGrotesk-Variable.woff2'), url('/fonts/ClashGrotesk-Variable.woff');
+  }
+}
 body{
   
   background-color: #f2f2f2;

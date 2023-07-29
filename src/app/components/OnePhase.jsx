@@ -11,26 +11,33 @@ const OnePhase = () => {
             <div
               className={`${styles.bgimagecontainer} lg:h-[52rem]  bg-no-repeat lg:bg-right-top`}
             >
-              <div className="lg:flex">
-               <img
-              class="object-cover object-center rounded"
-              alt="hero"
-              src="/like.svg"
-            />
-             <img
-              class="object-cover object-center rounded"
-              alt="hero"
-              src="/saturday.svg"
-            />
+              <div className="lg:flex ">
+                
+                 <Image
+                  src="/images/landing/onePhase/like.svg"
+                  width={400}
+                  height={400}
+                  alt="Picture of the author"
+                  className="object-cover object-center rounded drop-shadow-2xl"
+                />
+              
+                <Image
+                  src="/images/landing/onePhase/saturday.svg"
+                  width={400}
+                  height={400}
+                  alt="Picture of the author"
+                  className="object-cover object-center rounded drop-shadow-2xl"
+                />
+              </div>
+            
+               <Image
+                  src="/images/landing/onePhase/income.svg"
+                  width={400}
+                  height={400}
+                  alt="Picture of the author"
+                  className="object-cover  object-center rounded drop-shadow-2xl"
+                />
             </div>
-            <img
-              class="object-cover object-center rounded"
-              alt="hero"
-              src="/income.svg"
-            />
-
-            </div>
-           
           </div>
           <div class="lg:flex-grow md:w-1/2     md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
             <h1 className="font-heading title-font sm:text-5xl text-3xl mb-14 font-medium  text-gray-900">
@@ -51,7 +58,13 @@ const OnePhase = () => {
                       href="#"
                       className="whitespace-nowrap font-medium text-blue-700 hover:text-blue-600"
                     >
-                      <span className="font-bold text-lg text-black"  aria-hidden="true"> &rarr;</span> 
+                      <span
+                        className="font-bold text-lg text-black"
+                        aria-hidden="true"
+                      >
+                        {" "}
+                        &rarr;
+                      </span>
                     </a>
                   </p>
                 </div>
@@ -72,7 +85,13 @@ const OnePhase = () => {
                       href="#"
                       className="whitespace-nowrap font-medium text-blue-700 hover:text-blue-600"
                     >
-                      <span className="font-bold text-lg text-black" aria-hidden="true"> &rarr;</span>
+                      <span
+                        className="font-bold text-lg text-black"
+                        aria-hidden="true"
+                      >
+                        {" "}
+                        &rarr;
+                      </span>
                     </a>
                   </p>
                 </div>
@@ -93,7 +112,13 @@ const OnePhase = () => {
                       href="#"
                       className="whitespace-nowrap font-medium text-blue-700 hover:text-blue-600"
                     >
-                      <span className="font-bold text-lg text-black" aria-hidden="true"> &rarr;</span>
+                      <span
+                        className="font-bold text-lg text-black"
+                        aria-hidden="true"
+                      >
+                        {" "}
+                        &rarr;
+                      </span>
                     </a>
                   </p>
                 </div>
@@ -114,7 +139,13 @@ const OnePhase = () => {
                       href="#"
                       className="whitespace-nowrap font-medium text-blue-700 hover:text-blue-600"
                     >
-                      <span className="font-bold text-lg text-black" aria-hidden="true"> &rarr;</span>
+                      <span
+                        className="font-bold text-lg text-black"
+                        aria-hidden="true"
+                      >
+                        {" "}
+                        &rarr;
+                      </span>
                     </a>
                   </p>
                 </div>

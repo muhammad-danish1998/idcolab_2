@@ -121,9 +121,9 @@ export default function page() {
                 <img src="google.png" className="w-32 cursor-pointer h-24" alt="" />
                  
                 </div>
-                <p className="mt-2 text-sm leading-6 text-gray-500">
+                <p className="mt-2 text-lg leading-6 text-gray-500">
                 Already have an account?{' '}
-                <a href="/login" className="underline font-semibold text-indigo-600 hover:text-indigo-500">
+                <a href="/login" className="underline text-lg font-semibold text-indigo-600 hover:text-indigo-500">
                   Sign in
                 </a>
               </p>

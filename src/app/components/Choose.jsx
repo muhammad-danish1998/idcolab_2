@@ -9,12 +9,12 @@ const Choose = () => {
             <img
               class="object-cover object-center rounded"
               alt="hero"
-              src="choose.svg"
+              src="/images/landing/choose/choose.svg"
             />
           </div>
           <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
             <Image
-              src="/play.svg"
+              src="/images/landing/choose/play.svg"
               width={50}
               height={50}
               alt="Picture of the author"

@@ -1,5 +1,5 @@
 /*
-  This page requires some changes to your config:
+  This login requires some changes to your config:
   
   ```
   // tailwind.config.js
@@ -12,11 +12,11 @@
   }
   ```
 */
-export default function page() {
+export default function login() {
   return (
     <>
       {/*
-        This page requires updating your template:
+        This login requires updating your template:
 
         ```
         <html class="h-full bg-white">
@@ -103,9 +103,9 @@ export default function page() {
                 <img src="google.png" className="w-32 cursor-pointer h-24" alt="" />
                  
                 </div>
-                <p className="mt-2 text-sm leading-6 text-gray-500">
-                for Registration? {' '}
-                <a href="/signup" className="underline font-semibold text-indigo-600 hover:text-indigo-500">
+                <p className="mt-2 text-lg leading-6 text-gray-500">
+                For Registration? {' '}
+                <a href="/signup" className="underline text-lg font-semibold text-indigo-600 hover:text-indigo-500">
                   Sign up
                 </a>
               </p>

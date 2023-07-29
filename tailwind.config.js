@@ -15,8 +15,9 @@ module.exports = {
       },
     },
     fontFamily:{
-      'heading' : ['Familjen Grotesk', 'sans-serif'],
+      'heading' : ['ClashGrotesk-Variable'],
       'para' : ['Mulish', 'sans-serif']
+
     },
     backgroundImage: {
       'hero-pattern': "url('/one phase.png')",

@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import styles from "@/app/styles/header.module.css";
 
 const navigation = [
   { name: 'PLUGIN', href: '#' },
@@ -17,11 +18,11 @@ export default function Header() {
 
   return (
     <header className="bg-white lg:rounded-full lg:max-w-screen-2xl lg:mx-auto lg:mt-8 ">
-      <nav className="mx-auto flex  items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <nav className="mx-auto flex  items-center justify-between p-4 lg:px-8" aria-label="Global">
         <div className="flex items-center gap-x-12">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img className="h-12 w-auto" src="/logo.svg" alt="" />
+            <img className="h-12 w-auto" src="/images/landing/header/logo.svg" alt="" />
           </a>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
@@ -54,7 +55,7 @@ export default function Header() {
                   href="#"
                   className="text-sm font-semibold leading-6 text-gray-900"
                 >
-                  LOG IN <span aria-hidden="true">→</span>
+                  Log in <span aria-hidden="true">→</span>
                 </a>
               </div>
         </div>
@@ -67,7 +68,7 @@ export default function Header() {
               <span className="sr-only">Your Company</span>
               <img
                 className="h-8 w-auto"
-                src="/logo.svg"
+                src="/images/landing/header/logo.svg"
                 alt=""
               />
             </a>
@@ -95,10 +96,16 @@ export default function Header() {
               </div>
               <div className="py-6">
                 <a
-                  href="#"
+                  href="/login"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Log in
+                  Sign in
+                </a>
+                <a
+                  href="/signup"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  Sign Up
                 </a>
               </div>
             </div>
