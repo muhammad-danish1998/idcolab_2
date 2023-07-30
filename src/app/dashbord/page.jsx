@@ -54,7 +54,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function dashbord() {
+export default function Dashbord() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
