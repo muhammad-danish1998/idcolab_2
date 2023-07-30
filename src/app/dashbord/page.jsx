@@ -404,7 +404,7 @@ export default function dashbord() {
           </div>
 
           <main className="py-10 ">
-            <div className="px-4 sm:px-6 lg:px-8 flex justify-center items-center lg:h-screen">
+            <div className="px-4 sm:px-6 lg:px-8 flex justify-center items-center ">
               <Newproject />
             </div>
           </main>

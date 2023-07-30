@@ -3,7 +3,8 @@ import { PlusIcon } from "@heroicons/react/20/solid";
 const Newproject = () => {
   return (
     <div>
-      <div className="text-center ">
+      <div className="text-center border border-dotted  border-red-800 p-4 ">
+        <h1 className="font-heading text-4xl font-semibold text-gray-700">PLEASE SELECT OR CREATE NEW PROJECT</h1>
         <svg
           className="mx-auto h-12 w-12 text-gray-400"
           fill="none"
@@ -22,9 +23,7 @@ const Newproject = () => {
         <h3 className="mt-2 text-sm font-semibold text-gray-900">
           No projects
         </h3>
-        <p className="mt-1 text-lg text-gray-700">
-        PLEASE SELECT OR CREATE NEW PROJECT
-        </p>
+       
         <div className="mt-6">
           <button
             type="button"
