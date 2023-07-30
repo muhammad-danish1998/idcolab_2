@@ -21,6 +21,7 @@ import Header from "../components/Header";
 import DashboardHeader from "../components/DashboardHeader";
 import Newproject from "../components/Newproject";
 import Link from "next/link";
+import Image from "next/image";
 
 const navigation = [
   { name: "Activities", href: "#", icon: HomeIcon, current: true },
@@ -124,7 +125,8 @@ export default function dashbord() {
                   <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-white px-6 pb-4">
                     <div className="flex h-16 shrink-0 items-center">
                       <Link href={"/"}>
-                        <img
+                        <Image
+                         width={8} height={8}
                           className="h-8 w-auto"
                           src="/images/landing/header/logo.svg"
                           alt=""
@@ -220,7 +222,8 @@ export default function dashbord() {
           <div className="flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 bg-white px-6 pb-4">
             <div className="flex h-16 shrink-0 items-center">
               <Link href={"/"}>
-                <img
+                <Image
+                width={12} height={12}
                   className="h-12 w-auto"
                   src="/images/landing/header/logo.svg"
                   alt=""
@@ -353,11 +356,12 @@ export default function dashbord() {
                 <Menu as="div" className="relative">
                   <Menu.Button className="-m-1.5 flex items-center p-1.5">
                     <span className="sr-only">Open user menu</span>
-                    <img
-                      className="h-8 w-8 rounded-full bg-gray-50"
+                    {/* <Image
+                    width={8} height={8}
+                      className=" rounded-full bg-gray-50"
                       src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                       alt=""
-                    />
+                    /> */}
                     <span className="hidden lg:flex lg:items-center">
                       <span
                         className="ml-4 text-sm font-semibold leading-6 text-gray-900"
