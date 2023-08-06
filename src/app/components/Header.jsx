@@ -15,9 +15,11 @@ const navigation = [
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
+ const [user ,setUser ] = useState(false);
   return (
-    <header className="bg-white lg:rounded-full lg:max-w-screen-2xl lg:mx-auto lg:mt-8 ">
+    <>
+    {
+      user ? " " : <header className="bg-white lg:rounded-full lg:max-w-screen-2xl lg:mx-auto lg:mt-8 ">
       <nav className="mx-auto flex  items-center justify-between p-4 lg:px-8" aria-label="Global">
         <div className="flex items-center gap-x-12">
           <a href="#" className="-m-1.5 p-1.5">
@@ -113,5 +115,8 @@ export default function Header() {
         </Dialog.Panel>
       </Dialog>
     </header>
+    }
+    
+    </>
   )
 }
